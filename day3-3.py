@@ -23,17 +23,23 @@ for i in range(n):
     total=total+sc
 print('avg is',f(total,n))
 
-highest=0
-for i in range(n):
-    if score[i]>highest:
-       highest=score[i]
-       na=name[i]
-print(na,'you got the highest',highest)
+def h(score,name,n):
+    highest=0
+    for i in range(n):
+        if score[i]>highest:
+           highest=score[i]
+           na=name[i]
+    print(na,'you got the highest',highest)
+    return 
 
-lowest=100
-for j in range(n):
-    if score[j]<lowest:
-       lowest=score[j]
-       na=name[j]
-print(na,'you got the lowest',lowest)
+def l(score,name,n):
+    lowest=100
+    for j in range(n):
+        if score[j]<lowest:
+           lowest=score[j]
+           na=name[j]
+    print(na,'you got the lowest',lowest)
+    return 
 
+h(score,name,n)
+l(score,name,n)
