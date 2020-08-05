@@ -21,7 +21,7 @@ for i in range(n):
     sc=int(sc)
     score.append(sc)
     total=total+sc
-print('avg is',total/n)
+print('avg is',f(total,n))
 
 highest=0
 for i in range(n):
@@ -29,6 +29,7 @@ for i in range(n):
        highest=score[i]
        na=name[i]
 print(na,'you got the highest',highest)
+
 lowest=100
 for j in range(n):
     if score[j]<lowest:
